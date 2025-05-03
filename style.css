@@ -17,8 +17,8 @@ h1 {
 .icon {
     border: 1px solid #ccc; /* Outline for the icon */
     border-radius: 15px; /* Rounded corners */
-    width: 140px; /* Set width */
-    height: 140px; /* Set height */
+    width: 240px; /* Set width */
+    height: 240px; /* Set height */
     display: flex;
     justify-content: center; /* Center the image */
     align-items: center; /* Center the image */

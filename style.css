@@ -28,9 +28,9 @@ h1 {
 .icon img {
     width: 100%; /* Fill the container width */
     height: 100%; /* Fill the container height */
-    object-fit: cover; /* Maintain aspect ratio while covering */
+    object-fit: fill; /* Ensure it fills the container */
+    display: block; /* Remove any inline spacing */
 }
-
 .icon-text {
     margin-top: 10px; /* Space above the text */
 }

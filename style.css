@@ -28,7 +28,7 @@ h1 {
 .icon img {
     width: 100%; /* Fill the container width */
     height: 100%; /* Fill the container height */
-    object-fit: cover; /* Maintain aspect ratio while covering */
+    object-fit: fill; /* Change to fill to avoid white space */
 }
 
 .icon-text {

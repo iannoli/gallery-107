@@ -1,12 +1,20 @@
 body {
     background-color: #f0f0f0; /* Light gray background */
     text-align: center; /* Center text */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
 }
 
-h1 {
-    color: blue; /* Blue heading */
+#icons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center icons */
+    margin-top: 20px; /* Adjust space above icons */
 }
 
+/* Include the rest of your existing styles here... */
 .icon-container {
     margin-top: 20px; /* Space above the icon container */
 }

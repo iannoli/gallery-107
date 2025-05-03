@@ -16,7 +16,7 @@
     justify-content: center; /* Center icons */
     margin-top: 40px; /* Space above icons */
 }
-/* Include the rest of your existing styles here... */
+
 .icon-container {
     margin-top: 20px; /* Space above the icon container */
 }
@@ -46,6 +46,3 @@
     font-family: 'Helvetica', sans-serif; /* Use Helvetica */
     font-size: 1.2em; /* Adjust text size */
 }
-
-#title {
-    text-align: center; /* Center

@@ -39,13 +39,17 @@ h1 {
 .icon {
     text-align: center; /* Center text under icons */
     margin: 0 20px; /* Margin between icons */
+    width: 150px; /* Set width for square shape */
+    height: 150px; /* Set height equal to width for square */
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Ensures content stays within rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
 
 .icon img {
-    width: 100px; /* Size of the icons */
-    height: 100px; /* Ensure square shape */
-    border-radius: 20px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    width: 100%; /* Make image fill the container */
+    height: 100%; /* Make image fill the container */
+    object-fit: cover; /* Maintain aspect ratio of images */
 }
 
 .icon p {

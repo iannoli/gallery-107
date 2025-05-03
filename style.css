@@ -30,3 +30,26 @@ h1 {
     font-weight: 300; /* Light weight */
     font-size: 2.5em; /* Adjust size as needed */
 }
+#icons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center icons */
+    margin-top: 40px; /* Space above icons */
+}
+
+.icon {
+    text-align: center; /* Center text under icons */
+    margin: 0 20px; /* Margin between icons */
+}
+
+.icon img {
+    width: 100px; /* Size of the icons */
+    height: 100px; /* Ensure square shape */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.icon p {
+    margin-top: 10px; /* Space between icon and text */
+    font-family: 'Helvetica', sans-serif; /* Use Helvetica */
+    font-size: 1.2em; /* Adjust text size */
+}

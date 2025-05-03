@@ -40,10 +40,29 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
 
+#icons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center icons */
+    margin-top: 40px; /* Space above icons */
+}
+
+.icon {
+    background-color: white; /* White background for icons */
+    padding: 20px; /* Padding inside icons */
+    margin: 10px; /* Space around icons */
+    display: flex; /* Align items in a column */
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center items */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Text color */
+}
+
 .icon img {
-    width: 100%; /* Make image fill the container */
-    height: 100%; /* Make image fill the container */
-    object-fit: cover; /* Maintain aspect ratio of images */
+    width: 100px; /* Set a fixed width for icons */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .icon-text {
@@ -52,3 +71,4 @@ body {
     font-size: 0.9em; /* Smaller text size */
     text-align: center; /* Center the text */
 }
+

@@ -53,7 +53,7 @@ h1 {
 }
 
 .icon-text {
-    margin-top: 10px; /* Space between icon and text */
+    margin-top: 12px; /* Space between icon and text */
     font-family: 'Helvetica', sans-serif; /* Use Helvetica */
     font-size: 1.2em; /* Adjust text size */
 }

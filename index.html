@@ -101,5 +101,26 @@
       View Exhibition Checklist
     </a>
   </footer>
+  <!-- Your content here -->
+
+  <script>
+    let timeout;
+    const idleTime = 2 * 60 * 1000; // 2 minutes
+
+    function resetTimer() {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        window.location.href = 'https://iannoli.github.io/gallery-107/'; // Replace with your homepage URL if needed
+      }, idleTime);
+    }
+
+    ['click', 'mousemove', 'touchstart', 'keydown'].forEach(evt =>
+      window.addEventListener(evt, resetTimer)
+    );
+
+    resetTimer(); // Start the timer
+  </script>
+</body>
+</html>
 </body>
 </html>

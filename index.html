@@ -4,21 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Architecture of Light + Color</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Helvetica, sans-serif; /* Uses Helvetica */
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: black; /* Title color */
+        }
+
+        #icons {
+            display: flex; /* Use flexbox to arrange icons in a row */
+            justify-content: center; /* Center the icons */
+            margin-top: 20px;
+        }
+
+        .icon-container {
+            display: flex;
+            flex-direction: column; /* Stack icon and text */
+            align-items: center; /* Center items */
+            margin: 10px; /* Space between icons */
+        }
+
+        .icon {
+            border: 1px solid #ccc; /* Outline for the icon */
+            border-radius: 15px; /* Rounded corners */
+            width: 140px; /* Increased width for larger size */
+            height: 140px; /* Increased height for larger size */
+            display: flex;
+            justify-content: center; /* Center the image */
+            align-items: center; /* Center the image */
+            background-color: white; /* Background color for visibility */
+        }
+
+        .icon img {
+            max-width: 90%; /* Responsive image size */
+            max-height: 90%; /* Responsive image size */
+        }
+
+        .icon-text {
+            margin-top: 10px; /* Space above the text */
+        }
+    </style>
 </head>
 <body>
     <h1>Architecture of Light + Color</h1>
     <div id="icons">
-        <div class="icon">
-            <img src="path/to/icon1.png" alt="Pale Blaze">
+        <div class="icon-container">
+            <div class="icon">
+                <img src="path/to/icon1.png" alt="Pale Blaze">
+            </div>
             <p class="icon-text">Pale Blaze</p>
         </div>
-        <div class="icon">
-            <img src="path/to/icon2.png" alt="Stephen Singer">
+        <div class="icon-container">
+            <div class="icon">
+                <img src="path/to/icon2.png" alt="Stephen Singer">
+            </div>
             <p class="icon-text">Stephen Singer</p>
         </div>
-        <div class="icon">
-            <img src="path/to/icon3.png" alt="Exhibition Checklist">
+        <div class="icon-container">
+            <div class="icon">
+                <img src="path/to/icon3.png" alt="Exhibition Checklist">
+            </div>
             <p class="icon-text">Exhibition Checklist</p>
         </div>
     </div>

@@ -9,8 +9,8 @@ h1 {
 }
 
 #icons {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Use flexbox to arrange icons in a row */
+    justify-content: center; /* Center the icons */
     margin-top: 20px;
 }
 

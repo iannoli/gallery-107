@@ -1,79 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architecture of Light + Color</title>
-    <style>
-        body {
-            font-family: Helvetica, sans-serif; /* Uses Helvetica */
-            text-align: center;
-            margin: 20px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Architecture of Light + Color</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Helvetica, sans-serif;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+    }
 
-        h1 {
-            color: black; /* Title color */
-        }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #111;
+    }
 
-        #icons {
-            display: flex; /* Use flexbox to arrange icons in a row */
-            justify-content: center; /* Center the icons */
-            margin-top: 20px;
-        }
+    .icon-container {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-        .icon-container {
-            display: flex;
-            flex-direction: column; /* Stack icon and text */
-            align-items: center; /* Center items */
-            margin: 10px; /* Space between icons */
-        }
+    .icon-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+    }
 
-        .icon {
-            border: 1px solid #ccc; /* Outline for the icon */
-            border-radius: 15px; /* Rounded corners */
-            width: 140px; /* Increased width for larger size */
-            height: 140px; /* Increased height for larger size */
-            display: flex;
-            justify-content: center; /* Center the image */
-            align-items: center; /* Center the image */
-            background-color: white; /* Background color for visibility */
-        }
+    .icon-link {
+      width: 180px;
+      height: 180px;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background: #f0f0f0;
+    }
 
-        .icon img {
-            max-width: 90%; /* Responsive image size */
-            max-height: 90%; /* Responsive image size */
-        }
+    .icon-link:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
 
-        .icon-text {
-            margin-top: 10px; /* Space above the text */
-        }
-    </style>
-</head>
-<body>
-    <h1>Architecture of Light + Color</h1>
-    <div id="icons">
-        <div class="icon-container">
-            <a href="https://paleblaze.com/"> <!-- Add your link here -->
-    <div class="icon">
-        <img src="https://framerusercontent.com/images/jB96vzJs0BNLDD7SQye28CqHM.png" alt="Pale Blaze">
-    </div>
-</a>
-<p class="icon-text">Pale Blaze</p>
-        </div>
-        <div class="icon-container">
-            <a href="link1.html"> <!-- Add your link here -->
-    <div class="icon">
-        <img src="https://images.squarespace-cdn.com/content/v1/61ee35041ec91a5c394a6fde/1643004120994-2QO8OHLOS8RBJ5Z3NSIS/16-Singer-Art-21-019_MASTER.jpg?format=750w" alt="Stephen Singer">
-    </div>
-</a>
-<p class="icon-text">Stephen Singer</p>
-        </div>
-        <div class="icon-container">
-            <div class="icon">
-                <img src="path/to/icon3.png" alt="Exhibition Checklist">
-            </div>
-            <p class="icon-text">Exhibition Checklist</p>
-        </div>
-    </div>
-</body>
-</html>
+    .icon-link img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .icon-title {
+      margin-top: 0.75rem;
+      font-size: 1rem;
